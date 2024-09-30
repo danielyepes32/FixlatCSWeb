@@ -31,37 +31,19 @@ function LandingPage() {
   
 
 
-        {/* Círculo con efecto de iluminación en la esquina superior izquierda */}
-        <div className="absolute inset-0 flex justify-start items-start">
-        <div 
-            className="absolute" 
-            style={{
-            width: '70vw',  // Aumenté el tamaño
-            height: '76vw', // Aumenté el tamaño
-            borderRadius: '50%',
-            background: 'radial-gradient(circle at 0% 0%, rgba(0, 205, 255, 0.8), rgba(0, 44, 190, 0) 80%)',  // Mayor opacidad y expansión del gradiente
-            filter: 'blur(100px)',  // Aumenté el desenfoque
-            top: '-38vw',
-            left: '-38vw'
-        }}
-        />
-        </div>
+    {/* Círculo con efecto de iluminación en la esquina superior izquierda */}
+    <div className="absolute inset-0 flex justify-start items-start">
+    <div 
+        className="absolute w-[70vw] h-[76vw] rounded-full bg-[radial-gradient(circle_at_top_left,_rgba(0,205,255,0.8),_rgba(0,44,190,0)_80%)] blur-[100px] top-[-38vw] left-[-38vw] animate-pulse-slow" 
+    />
+    </div>
 
-        {/* Círculo con efecto de iluminación en la esquina inferior derecha */}
-        <div className="absolute inset-0 flex justify-end items-end">
-            <div 
-                className="absolute" 
-                style={{
-                width: '70vw',  // Aumenté el tamaño
-                height: '76vw', // Aumenté el tamaño
-                borderRadius: '50%',
-                background: 'radial-gradient(circle at 100% 100%, rgba(0, 205, 255, 0.8), rgba(0, 44, 190, 0) 80%)',  // Mayor opacidad y expansión del gradiente
-                filter: 'blur(100px)',  // Aumenté el desenfoque
-                bottom: '-38vw',
-                right: '-38vw'
-            }}
-        />
-        </div>
+    {/* Círculo con efecto de iluminación en la esquina inferior derecha */}
+    <div className="absolute inset-0 flex justify-end items-end">
+    <div 
+        className="absolute w-[70vw] h-[76vw] rounded-full bg-[radial-gradient(circle_at_bottom_right,_rgba(0,205,255,0.8),_rgba(0,44,190,0)_80%)] blur-[100px] bottom-[-38vw] right-[-38vw] animate-pulse-slow" 
+    />
+    </div>
 
         {/* Contenido del div */}
         <div className="relative z-[100] w-full items-center justify-center h-1/6 place-items-center">
@@ -70,7 +52,7 @@ function LandingPage() {
                     <img
                         src="Fixlat-HD.svg"
                         alt="img"
-                        className="lg:p-auto lg:mt-0 "
+                        className="lg:p-auto lg:mt-0 text-white"
                     />
                 </div>
                 <div className="lg:flex space-x-20 w-full h-full hidden col-span-3 place-items-center justify-center">
@@ -245,19 +227,19 @@ function LandingPage() {
         </div>
         <div className='py-3 w-full px-[5vw]'>
             <div className='px-[5vw] w-full h-auto py-5 lg:mt-0 mt-5 lg:flex lg:grid lg:grid-cols-7 place-items-center bg-blue-card rounded-lg'>
-                <span className='font-poppins font-semibold lg:text-[30px] text-[20px] text-white'>Presencia nacional e internacional</span>
+                <span className='font-poppins font-semibold lg:text-[30px] text-[20px] text-white'>Experiencia y Especialización en Tecnología y Ciberseguridad</span>
                 <div className='lg:col-span-2 lg:h-full'>
                     <div className='lg:h-full lg:w-[5px] h-[5px] w-full bg-custom-blue'></div>
                 </div>
-                <span className='col-span-4 font-poppins font-light text-white lg:text-[20px] text-[15px]'>En FIXLAT Security, nuestra experiencia nos ha permitido expandir operaciones a nivel internacional, colaborando en proyectos de ciberseguridad en países como México y Perú.</span>
+                <span className='col-span-4 font-poppins font-light text-white lg:text-[20px] text-[15px]'>En FIXLAT Security, contamos con una vasta experiencia y especialización en tecnología y ciberseguridad. Brindamos soluciones innovadoras y efectivas para satisfacer las necesidades de nuestros clientes. Nuestro enfoque en la excelencia y la pasión por lo que hacemos nos permite enfrentar desafíos tecnológicos.</span>
             </div>
         </div>
         <div className='px-[10vw] w-full h-auto py-5 lg:mt-0 mt-5 lg:flex lg:grid lg:grid-cols-7 place-items-center'>
-            <span className='font-poppins font-semibold lg:text-[30px] text-[20px] text-white'>Presencia nacional e internacional</span>
+            <span className='font-poppins font-semibold lg:text-[30px] text-[20px] text-white'>Enfoque en la Excelencia y la Pasión</span>
             <div className='lg:col-span-2 lg:h-full'>
                 <div className='lg:h-full lg:w-[5px] h-[5px] w-full bg-custom-blue'></div>
             </div>
-            <span className='col-span-4 font-poppins font-light text-white lg:text-[20px] text-[15px]'>En FIXLAT Security, nuestra experiencia nos ha permitido expandir operaciones a nivel internacional, colaborando en proyectos de ciberseguridad en países como México y Perú.</span>
+            <span className='col-span-4 font-poppins font-light text-white lg:text-[20px] text-[15px]'>En FIXLAT Security, estamos comprometidos con la excelencia y la pasión por nuestro trabajo. Este compromiso nos impulsa a buscar soluciones innovadoras y efectivas en el ámbito de la tecnología y la ciberseguridad. Nuestra dedicación y creatividad nos permiten superar desafíos tecnológicos y ofrecer el mejor servicio a nuestros clientes.</span>
         </div>
     </div>
     <div className="bg-landing-bg w-screen lg:h-auto h-[100vw] overflow-hidden relative">
@@ -305,7 +287,7 @@ function LandingPage() {
         </div>
     </div>
     <div className='w-screen h-[3px] bg-metal'></div>
-    <div className='w-screenflex flex-col lg:h-[200px] h-[30vw] bg-landing-bg grid grid-cols-6'>
+    <div className='w-screen flex flex-col lg:h-[200px] h-[30vw] bg-landing-bg grid grid-cols-6'>
         <div className='flex col-span-1 w-full h-full justify-center items-center place-items-center ml-4 '>
             <img
                 src="Fixlat-HD.svg"

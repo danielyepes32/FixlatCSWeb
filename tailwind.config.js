@@ -6,6 +6,16 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        'pulse-slow': {
+          '0%': { transform: 'scale(1)', opacity: '0.3' },
+          '50%': { transform: 'scale(1.1)', opacity: '1.3' },
+          '100%': { transform: 'scale(1)', opacity: '0.3' },
+        },
+      },
+      animation: {
+        'pulse-slow': 'pulse-slow 5s infinite ease-in-out',
+      },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'], // Asegúrate de agregar la fuente aquí
       },
