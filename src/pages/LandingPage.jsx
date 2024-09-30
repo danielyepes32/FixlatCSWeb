@@ -227,7 +227,7 @@ function LandingPage() {
         </div>
         <div className='py-3 w-full px-[5vw]'>
             <div className='px-[5vw] w-full h-auto py-5 lg:mt-0 mt-5 lg:flex lg:grid lg:grid-cols-7 place-items-center bg-blue-card rounded-lg'>
-                <span className='font-poppins font-semibold lg:text-[30px] text-[20px] text-white'>Experiencia y Especialización en Tecnología y Ciberseguridad</span>
+                <span className='font-poppins font-semibold lg:text-[28px] text-[20px] text-white'>Experiencia y Especialización en Tecnología y Ciberseguridad</span>
                 <div className='lg:col-span-2 lg:h-full'>
                     <div className='lg:h-full lg:w-[5px] h-[5px] w-full bg-custom-blue'></div>
                 </div>
