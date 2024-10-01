@@ -312,7 +312,7 @@ function LandingPage() {
             </div>
         </div>
         <div className='flex col-span-1 w-full h-full justify-center items-center place-items-center'>
-            <span className='w-full justify-center items-center flex h-full text-white text-center lg:text-[16px] text-[10px] mr-2'>© 2024 FixLat Security</span>
+            <span className='w-full justify-center items-center flex h-full text-white text-center lg:text-[16px] text-[10px] mr-2'>© 2024 FixLat CiberSecurity</span>
         </div>
     </div>
     </>
