@@ -3,7 +3,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { PiDetective } from "react-icons/pi";
 import { PiBookOpenText } from "react-icons/pi";
+import { RiGuideLine } from "react-icons/ri";
+import { PiRobot } from "react-icons/pi";
 
 const CardSliderAuto = () => {
   return (
@@ -33,7 +36,7 @@ const CardSliderAuto = () => {
             <div className="bg-blue-card w-full rounded-2xl lg:h-[240px] h-[40vw] flex">
               <div className='lg:p-10 px-8 py-5 h-full flex flex-col'>
                 <div className='w-[50px] h-[50px] justify-start rounded-[2000px] bg-blue-icon p-2'>
-                  <PiBookOpenText className='text-custom-blue w-full h-full' />
+                  <PiDetective className='text-custom-blue w-full h-full' />
                 </div>
                 <span className='text-white mt-auto font-poppins font-regular text-[20px]'>Detección y corecciones de vulnerabilidades cloud y APIs</span>
               </div>            
@@ -43,7 +46,7 @@ const CardSliderAuto = () => {
           <div className="bg-blue-card w-full rounded-2xl lg:h-[240px] h-[40vw] flex">
               <div className='lg:p-10 px-8 py-5 h-full flex flex-col'>
                 <div className='w-[50px] h-[50px] justify-start rounded-[2000px] bg-blue-icon p-2'>
-                  <PiBookOpenText className='text-custom-blue w-full h-full' />
+                  <RiGuideLine className='text-custom-blue w-full h-full' />
                 </div>
                 <span className='text-white mt-auto font-poppins font-regular text-[20px]'>Monitoreo de seguridad de colaboradores</span>
               </div>            
@@ -53,7 +56,7 @@ const CardSliderAuto = () => {
           <div className="bg-blue-card w-full rounded-2xl lg:h-[240px] h-[40vw] flex">
               <div className='lg:p-10 px-8 py-5 h-full flex flex-col'>
                 <div className='w-[50px] h-[50px] justify-start rounded-[2000px] bg-blue-icon p-2'>
-                  <PiBookOpenText className='text-custom-blue w-full h-full' />
+                  <PiRobot className='text-custom-blue w-full h-full' />
                 </div>
                 <span className='text-white mt-auto font-poppins font-regular text-[20px] mr-24'>Detección de phishing con IA</span>
               </div>            

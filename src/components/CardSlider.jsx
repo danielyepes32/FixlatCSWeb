@@ -4,6 +4,10 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { PiBookOpenText } from "react-icons/pi";
+import { TbRuler2Off } from "react-icons/tb";
+import { MdOutlineSecurityUpdateWarning } from "react-icons/md";
+import { GrSecure } from "react-icons/gr";
+import { RiSecurePaymentLine } from "react-icons/ri";
 
 const CardSlider = () => {
   return (
@@ -33,7 +37,7 @@ const CardSlider = () => {
             <div className="rounded-2xl w-full h-full bg-blue-card lg:h-[400px] h-[60vw] flex justify-center items-center">
                 <div className='lg:p-10 h-[300px] p-5 h-full flex flex-col'>
                     <div className='w-[50px] h-[50px] rounded-[2000px] bg-blue-icon p-2'>
-                        <PiBookOpenText className='text-custom-blue w-full h-full' />
+                        <TbRuler2Off className='text-custom-blue w-full h-full' />
                     </div>
                     <span className='text-white lg:mt-auto mt-[20vw] font-poppins font-semibold lg:text-[20px] text-[15px]'>Cumplimiento y normatividad </span>
                 </div>
@@ -43,7 +47,7 @@ const CardSlider = () => {
             <div className="rounded-2xl w-full h-full bg-blue-card lg:h-[400px] h-[60vw] flex justify-center items-center">
                     <div className='lg:p-10 p-5 h-full flex flex-col'>
                         <div className='w-[50px] h-[50px] rounded-[2000px] bg-blue-icon p-2'>
-                            <PiBookOpenText className='text-custom-blue w-full h-full' />
+                            <MdOutlineSecurityUpdateWarning className='text-custom-blue w-full h-full' />
                         </div>
                         <span className='text-white lg:mt-auto mt-[20vw] font-poppins font-semibold lg:text-[20px] text-[15px]'>Ingeniería en ciberseguridad </span>
                     </div>
@@ -53,7 +57,7 @@ const CardSlider = () => {
           <div className="rounded-2xl w-full h-full bg-blue-card lg:h-[400px] h-[60vw] flex justify-center items-center">
                 <div className='lg:p-10 p-5 h-full flex flex-col'>
                     <div className='w-[50px] h-[50px] rounded-[2000px] bg-blue-icon p-2'>
-                        <PiBookOpenText className='text-custom-blue w-full h-full' />
+                        <RiSecurePaymentLine  className='text-custom-blue w-full h-full' />
                     </div>
                     <span className='text-white lg:mt-auto mt-[20vw] font-poppins font-semibold lg:text-[20px] text-[15px]'>Pruebas de hackeo ético </span>
                 </div>
@@ -63,7 +67,7 @@ const CardSlider = () => {
           <div className="rounded-2xl w-full h-full bg-blue-card lg:h-[400px] h-[60vw] flex justify-center items-center">
                 <div className='lg:p-10 p-5 h-full flex flex-col'>
                     <div className='w-[50px] h-[50px] rounded-[2000px] bg-blue-icon p-2'>
-                        <PiBookOpenText className='text-custom-blue w-full h-full' />
+                        <GrSecure className='text-custom-blue w-full h-full' />
                     </div>
                     <span className='text-white lg:mt-auto mt-[20vw] font-poppins font-semibold lg:text-[20px] text-[15px] mr-10'>Seguridad profunda </span>
                 </div>

@@ -1,5 +1,7 @@
 import React from 'react';
-import '../index.css'; // Importar el archivo CSS personalizado
+import Slider from "react-slick"; // Importamos el carrusel
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Carousel = () => {
     const logos = [
@@ -10,23 +12,35 @@ const Carousel = () => {
         "https://raw.githubusercontent.com/juanroacaice12/imagens-/refs/heads/main/china.svg"
     ];
 
-    return (
-        
-        <div className="slider flex justify-center align-items-center">
-            <div className="move">
-                {logos.concat(logos).map((logo, index) => (
+    const settings = {
+        dots: false,               // Sin puntos de navegación
+        infinite: true,            // Carrusel infinito
+        speed: 2000,                // Velocidad de transición
+        slidesToShow: 4,           // Cuántos logos mostrar a la vez
+        slidesToScroll: 1,         // Cuántos logos desplazar en cada transición
+        autoplay: true,            // Carrusel automático
+        autoplaySpeed: 2000,       // Velocidad de desplazamiento
+        arrows: false,             // Sin flechas de navegación
+        pauseOnHover: false,       // Continuar incluso si el usuario pasa el ratón por encima
+    };
 
-                    <div key={index} className="h-[100px] lg:w-[250px] w-[150px] flex justify-center bg-transparent">
-                        <img
-                            src={logo}
-                            alt={`Logo ${index + 1}`}
-                            className="filter brightness-0 invert lg:h-20 h-16"
-                        />
+    return (
+        <div className="w-full flex flex-col">
+            <Slider {...settings}>
+                {logos.map((logo, index) => (
+                    <div 
+                        key={index} 
+                        className="h-[100px] lg:w-[250px] w-[150px] flex justify-center items-center bg-transparent">
+                        <img 
+                            src={logo} 
+                            alt={`Logo ${index + 1}`} 
+                            className="filter brightness-0 invert lg:h-full w-full h-16 object-contain" />
                     </div>
                 ))}
-            </div>
+            </Slider>
         </div>
     );
 };
 
 export default Carousel;
+
