@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Carousel = () => {
     const logos = [
-        "https://raw.githubusercontent.com/juanroacaice12/imagens-/main/logo_smart.svg",
         "https://raw.githubusercontent.com/juanroacaice12/imagens-/main/quimicas-removebg-preview.svg",
         "https://raw.githubusercontent.com/juanroacaice12/imagens-/main/el-retiro.svg",
         "https://raw.githubusercontent.com/juanroacaice12/imagens-/main/emo.svg",
